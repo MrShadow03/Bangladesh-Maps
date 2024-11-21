@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    /* border: 1px solid #252525; */
+    height: 99.6vh;
+    // background-color: #0f172a;
+    // background: linear-gradient(180deg, rgba(15,23,42,1) 60%, rgba(31,48,88,1) 100%);
+
+    .container-custom {
+        margin: 0 auto;
+        height: 100%;
+        /* border: 1px solid blueviolet; */
+    }
+}
+
+.font-bn {
+    font-family: 'Tatsam Bengali', sans-serif;
+}
+
+#whole-map {
+    /* border: 1px solid green; */
+    max-height: 100%;
+    margin: 0 auto;
+}
+
+.land {
+    fill-opacity: 1;
+    fill: #334155;
+    stroke: #6b7280;
+    stroke-opacity: 1;
+    stroke-width: 0.5;
+    transform-origin: center;
+    transition: transform 0.3s ease, fill 0.3s ease;
+
+    .district-land {
+        stroke: #334155;
+        transition: fill 500ms cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:hover {
+            fill: white !important;
+            transition-duration: 100ms;
+        }
+    }
+
+    &:hover {
+        cursor: pointer;
+        /* fill: #0062d3 !important;
+        stroke: #6bb0ff; */
+    }
+}
+
+
+
+#div-barishal { 
+    &.active {
+        fill: #ea580c;
+    }
+    &:hover {
+        fill: #ea580c
+    }
+}
+#div-chittagong { 
+    &.active {
+        fill: #fbbc04;
+    }
+    &:hover {
+        fill: #fbbc04
+    }
+}
+#div-dhaka { 
+    &.active {
+        fill: #22c55e;
+    }
+    &:hover {
+        fill: #22c55e
+    }
+
+    #dis-tangail {
+        fill: #22c55e;
+    }
+
+    #dis-gazipur {
+        fill: #16a34a;
+    }
+
+    #dis-kishoreganj {
+        fill: #15803d;
+    }
+
+    #dis-narayanganj {
+        fill: #4ade80;
+    }
+
+}
+#div-khulna { 
+    &.active {
+        fill: #3b82f6;
+    }
+    &:hover {
+        fill: #3b82f6
+    }
+}
+#div-rajshahi { 
+    &.active {
+        fill: #e11d48;
+    }
+    &:hover {
+        fill: #e11d48
+    }
+}
+#div-rangpur { 
+    &.active {
+        fill: #46bdc6;
+    }
+    &:hover {
+        fill: #46bdc6
+    }
+}
+#div-sylhet { 
+    &.active {
+        fill: #9333ea;
+    }
+    &:hover {
+        fill: #9333ea
+    }
+}
+#div-mymenshingh { 
+    &.active {
+        fill: #d946ef;
+    }
+    &:hover {
+        fill: #d946ef
+    }
+}
+
+/* Hover effect */
+
+
+.div-label {
+    fill: aliceblue !important;
+    text-align: center;
+    opacity: .8;
+    font-weight: 400;
+    font-size: 12px;
+    font-family: 'Hind Siliguri', sans-serif;
+
+    &[data-label="div-chittagong"] {
+        opacity: .9 !important;
+    }
+}
+
+.toggle_button {
+    &.active {
+        background-color: #0ea5e9;
+
+        svg {
+            color: white !important;
+        }
+
+        &:hover {
+            background-color: #3b82f6;
+        }
+    }
+}
